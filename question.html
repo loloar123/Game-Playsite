@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<!-- <html lang="en"> -->
+<html lang="en" dir="ltr" id="rootElement">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="js/scrollbar.css">
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="js/burger.css">
+  <link rel="stylesheet" href="login_signup/login_signup.css">
+  <link rel="stylesheet" href="all.css">
+  <link rel="stylesheet" href="question.css">
+  <title>GamePlay - FAQ</title>
+  <link href="/YOUR_PATH/favicon.ico" rel="icon" type="image/x-icon" />
+<link
+        href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAA7az7AK+ygQDxbXoA/4mOAL1DTQCQMDoA8ZCUAPnL/wD9jZQAGxBgAFLL/wD/i5IA6oGOAP/03wDsiP8A99X9AP+9xAD7io0AW8v/AORl/wD7iZAA/YmQALNfZABhzv8A8Jf/APz/uQD/3QcAUgVmAFYGYwD7xP0A7Y/+APnV/wD0qf8A/4ePAFoXVQBSzP8A7pj+AK6xgAD/i5UA9LX/APqHkABSCmoA/IeQAOZj/wBIBWAAXs//AO6o+wD0vv8AVmzLAPHEzQCPMTwA9r7/APiHkQBNBmYA/IqRAEoMZgDQR08AUg1KAPyIjwDoZP4ATgdkAOhn/gDhcfsA/OL/APBsfADwn/4A/4iQAOZn/wDfefYATwZoAM5HUQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJgICAgICAiYAAAAAAAAXKSspNSkrDRoaHQAAAAAADkUtOC4YRjoaG0cAAAAAAAAAEzEKJAs/PTIDAAAAAAAANypDB0NDQxIAAAAAAAAAAEMPHyVEREQWMwAAAAAAAAAEFBlCAUREOyMGNgAAAAAABBk8ISgeRCJBBj0AAAAAAARELz4wCBAVQQUcAAAAAAAEREQ0LCBAQ0E5AAAAAAAAEUMMQwlDQydBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//AAD//wAA8A8AAMAHAADABwAA8AcAAOAfAADgDwAA4AMAAOADAADgAwAA4AcAAOAPAAD//wAA//8AAP//AAA="
+        rel="icon" type="image/x-icon" />
+</head>
+
+<body>
+  <div id="progressbar"></div>
+  <div id="scrollPath"></div>
+  <img src="images/moon.png" class="mt-2 moon" alt="moon" title="darkmode-button" id="icon">
+  <header class="d-flex align-items-center">
+    <div data-aos="fade-up-left" class="logo"><a href="index.html"><img src="logoLicense/93868.png" alt="logo"
+                title="Site logo" height="80px"></a></div>
+
+
+    <div class="pcBar justify-content-end">
+        <nav>
+            <ul>
+                <li class="login-Li align-items-center justify-content-center">
+                    <button style="width: 45px; background: transparent; border:none;"
+                        class=" align-items-center justify-content-center" id="show-login1">
+                        <a class="align-items-center d-flex justify-content-center"
+                            style=" border-radius: 12px; width: 50%; height: 45px;" href="#" title="log in">
+                            <i class="fa fa-user" aria-hidden="true">
+                            </i>
+                        </a>
+                    </button>
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="about.html" title="About">About</a></li>
+                <li><a href="trivia.html" title="Contact">Trivia</a></li>
+                <li><a href="gallery.html" title="Gallery">Gallery</a></li>
+                <li><a href="contact.html" title="Contact">Contact</a></li>
+                <li class="d-flex align-items-center justify-content-center"><a href="question.html"
+                        title="F.A.Q">F.A.Q</a></li>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="phoneBar">
+        <input class="d-none" id="burger" type="checkbox" />
+
+        <label for="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav>
+            <ul>
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="about.html" title="About">About</a></li>
+                <li><a href="trivia.html" title="Contact">Trivia</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="question.html" title="F.A.Q">F.A.Q</a></li>
+            </ul>
+        </nav>
+        <div class="login-Li2 align-items-center justify-content-center" style="
+        font-size: 1.5em;
+        right: 70px;
+        z-index: 9999;
+        position: absolute;
+        top: 10px;">
+            <button style="width: 45px; background: transparent; border:none;"
+                class=" align-items-center justify-content-center" id="show-login2">
+                <a class="align-items-end d-flex justify-content-center"
+                    style=" border-radius: 12px; width: 50%; height: 38px;" href="#" title="log in">
+                    <i class="fa fa-user" aria-hidden="true">
+                    </i>
+                </a>
+            </button>
+        </div>
+    </div>
+</header>
+  <div class="strip align-items-end d-flex justify-content-center">
+    <div class="faq"></div>
+  </div>
+  <main class="d-flex align-items-center justify-content-center text-center">
+    <div class="container">
+      <div class="faqHead d-flex align-items-center text-center justify-content-center mb-2"
+        data-aos-offset="300">
+        <h3 class="mt-4 mb-4" data-aos="fade-up">Common Questions Weve Been Asked<i class="fa-solid fa-comment-dots"></i></h3>
+      </div>
+      <div data-aos="zoom-in" data-aos-duration="300" class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Are Macs Good for Gaming?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              I'm not an expert on the Mac ecosystem, so it's hard for me to make a unilateral statement here. Maybe there is a community that thrives on Mac gaming. I know that there are opportunities to emulate Windows experiences on Mac, but I think as it stands, PC gaming is largely a Windows-based ecosystem.
+
+              That's not to say you can't game on a Mac, but the gaming ecosystem is much healthier on PC.
+            </div>
+          </div>
+        </div>
+        <div data-aos="zoom-in" data-aos-duration="400" class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Where Can I Find My Next Gaming Monitor?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              After a lot of research, we have collected a list of the best gaming monitors in their respective
+              categories. You can find our best picks in our main menu under Gaming monitors. Here you can choose the
+              right type for you and view all our best picks in detail. We also have links to where you can buy them.
+              The best monitor for gaming in 2018 is the <a class="acc_link"
+                href="https://www.amazon.com/SWIFT-PG278Q-27-inch-Gaming-Monitor/dp/B00MSOND8C/ref=sr_1_1?tag=monitnerds-20&ie=UTF8&geniuslink=true"
+                target="_blank"> Asus ROG Swift PG278Q.</a>
+              <br>
+              We have compared service, prices, quality, reliability, customer reviews, etc.sor, and found that Amazon
+              is a good place to buy from based on the mentioned points. So we will only show relevant ads and links
+              from Amazon.
+            </div>
+          </div>
+        </div>
+        <div data-aos="zoom-in" data-aos-duration="500" class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Is Screen Resolution Necessary for Performance?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Resolution dictates how your current or planned GPU will be able to handle the graphics requirement of
+              each title. As you go higher, pixel count exponentially increases resulting in improved detail and
+              sharpness of the image. Of course, your GPU will have to render more pixels to create a larger field of
+              view and expanded detail so your frames will take a hit. 1080p is still widely favored since it does not
+              take a lot to push 140 frames or more, making it ideal for E-Sports setups. 4K and Ultra-Wide are mostly
+              luxury options since they both require a ton of horsepower to run, so they are mostly chosen by gamers who
+              value immersive experiences and eye-candy more than performance. 1440p sits as the happy medium in between
+              the divide, since it does offer improvements graphics-wise while requiring substantial but lesser
+              processing than 4K.
+            </div>
+          </div>
+        </div>
+        <div data-aos="zoom-in" data-aos-duration="600" class="accordion-item">
+          <h2 class="accordion-header" id="heading4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+              What is Input Lag/ Display Lag and Why is it Important?
+            </button>
+          </h2>
+          <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Input lag time is, in regards to monitors, the time it takes from pressing a button (on the keyboard or
+              mouse) to that signal being processed through the I/O (input/output) ports of the cables and viewed on the
+              screen. It just tells how much time it takes for that monitor to process the image received from your
+              graphics card and the commands from your controls and show it on the screen. For professional or even
+              average serious gamers, an input lag time of more than 30ms becomes the limit where it is noticeable,
+              especially when playing FPS and racing games or generally games requiring quick actions. Besides the
+              internet connection, high input lag is proclaimed as one of the reasons for mess-ups or in calculated
+              mistakes during games. Therefore, input lag time, although not being a standardized unit of measurement
+              for monitor general performance, is included as a factor in this guide and our reviews as it is quite
+              important for most gamers. We recommend you to stay below an input lag time of 30 ms, of course depending
+              on which level of gamer you are, as described before. An excellent gaming monitor with a very low input
+              lag of 10 ms is the BenQ XL2730Z. Combined with its low response time and 144 Hz refresh rate makes the
+              BenQ XL2730Z (includes Black Equalizer as well) a good choice for all level of gamers. See this monitor on
+              Amazon here.
+            </div>
+          </div>
+        </div>
+        <!-- <-- end -->
+        <div data-aos="zoom-in" data-aos-duration="700" class="accordion-item">
+          <h2 class="accordion-header" id="heading5">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+              How does Contrast Ratio make a difference in gaming?
+            </button>
+          </h2>
+          <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Contrast ratio means the difference between the darkest and brightest color value the monitor can project.
+              It is the difference between the white and black color value, but since all monitors use a backlight when
+              turned on the black is in reality, a very dark gray since black is by definition the absence of light. You
+              may have noticed that contrast ratio is presented two times when looking at the monitor specs. It may look
+              something like 1000:1 and then beneath it is a number that could look like 1,000,000:1. The smaller number
+              (first one), is the static contrast ratio, which is defined by the difference between the darkest and
+              brightest color value as-is (the brightest color value is 1000 times brighter than the darkest color
+              value). The higher number ( the second one) shows the difference between the darkest color value at the
+              lowest brightness possible compared to the brightest color value at the highest brightness the monitor is
+              capable. The most useful information between the two is the static contrast ratio since you have no use of
+              the dynamic contrast ratio during gaming (you can only have one brightness setting at a time). IPS panels
+              can have a higher contrast ratio than TN panels, but additional brand-specific features can also have an
+              effect on the contrast. Acer is well-known for the contrast ratios on their monitors for example. BenQ has
+              developed a feature called Black Equalizer, which is very convenient during gaming.
+              <br>
+              One would then think that the higher the contrast ratio, the wider color display range but there are
+              numerous examples of this not being true – mainly because there is no standard for measuring the contrast
+              ratio (no room lamination of reflection standards), so every manufacturer has their way of measuring the
+              contrast ratio. However, regardless its sincerity, it should still be regarded as an important factor when
+              deciding upon a gaming monitor. You don’t want a situation where you can’t see the difference between a
+              dark blue and a dark gray or black pixel as it can have a tremendous effect on your gameplay when playing
+              in a dark room where brightness is reduced.
+            </div>
+          </div>
+        </div>
+        <!-- end -->
+        <div data-aos="zoom-in" data-aos-duration="800" class="accordion-item">
+          <h2 class="accordion-header" id="heading6">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+              Which panel type should you choose for your gaming monitor?
+            </button>
+          </h2>
+          <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p id="id_p">The Panel type is one of the most important aspects when you select a gaming monitor. There
+                are three main types of panels- TN panels VA panels and IPS panels. We will explore the most significant
+                differences and find out which suits you best.</p>
+              <div class="buttons d-flex justify-content-between flex-wrap gap-3">
+                <button id="sectionA" class="btn bg-primary">
+                  A. TN panel: Twisted Nematic.
+                </button>
+                <button id="sectionB" class="btn bg-primary">
+                  B. VA Panel: Vertical Alignment.
+                </button>
+                <button id="sectionC" class="btn bg-primary">
+                  C. IPS panels: In- Plain Switching.
+                </button>
+                <button id="mainSection" class="btn bg-primary">
+                  Back to Main section.
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <-- end -->
+        <div data-aos="zoom-in" data-aos-duration="900" class="accordion-item">
+          <h2 class="accordion-header" id="heading7">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+              How Does the Refresh Rate Affect My Gaming?
+            </button>
+          </h2>
+          <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              The best-rated gaming monitor on Amazon is listed in our latest buyers guide. The refresh rate of your
+              gaming monitor matters a lot when it comes to gaming experience. Whether it is for heavy graphical games
+              like Battlefield, Call of Duty or less GPU demanding games like League of Legends. Since refresh rate is
+              the number of frames the monitor is capable of showing per second, it is a relevant parameter to look for
+              when browsing for a gaming monitor to fit your gaming needs. Keep in mind that console games only use a
+              maximum of 60 Hz, so that is the exception. But if you play online against an opponent that uses a 60 Hz
+              monitor on a computer game, the odds of you being able to react faster than him is significantly increased
+              by the refresh rate alone. It makes the difference between shooting where the opponent was and where he
+              is. Imagine that for every 60 frames that your opponent has seen, you have seen 144 frames with a 144 Hz
+              monitor, thereby laying the foundation for you to react quicker.overflow.
+            </div>
+          </div>
+        </div>
+        <!-- end -->
+        <div data-aos="zoom-in" data-aos-duration="1000" class="accordion-item">
+          <h2 class="accordion-header" id="heading8">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+              Should I Choose a 144 Hz Monitor?
+            </button>
+          </h2>
+          <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Higher refresh rates equal greater smoothness in gaming. The 144 Hz refresh rate is the new trending
+              phenomenon in the industry and with good reason, since the graphic cards now commonly support more than
+              the standard 60 Hz. Without a gaming monitor that can utilize the capabilities of your GPU, you will not
+              experience the optimal performance your hardware can deliver.
+              <br>
+              It certainly has divided gamers, where some love to see perfect color production, others are blown away by
+              the smoothness 144 Hz monitors can deliver. Some gamers state that “Once you try 144 Hz, you will never go
+              lower (on refresh rates).” What you get for a higher refresh rate is valued greater than the compromise
+              you get on color accuracy if you are a fan of online shooting games, for example. On the other hand, we
+              see other gamers say “Once you try IPS, you will never go back to TN,” so it is pretty much up to each to
+              identify their preferences and purpose of the monitor.
+            </div>
+          </div>
+        </div>
+        <!-- end -->
+      </div>
+    </div>
+  </main>
+
+  <footer class="mt-3">
+    <div class="container-fluid d-flex flex-wrap row">
+      <div class="down d-flex flex-wrap flex-sm-wrap justify-content-evenly  align-items-center"
+        style="height: 80%; width:100%;">
+        <div class="col-7 col-xl-6 col-md-7 col-sm-8 links d-flex justify-content-md-center justify-content-sm-start">
+          <nav class="d-flex justify-content-center">
+            <ul class="d-flex">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="question.html">FAQ</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="icon col-7 col-xl-6 col-md-7 col-sm-8 d-flex align-items-center justify-content-center text-center">
+          <aside class="mike"></aside>
+          <a target="_blank" class="text-center" href="https://www.instagram.com/" title="instagram" alt="instagram"><i
+              class="fa-brands fa-square-instagram"></i></a>
+          <aside class="gap1" style="border: 1px solid #0000004d; height:50px; "></aside>
+          <a target="_blank" class="text-center" href="https://www.facebook.com/" title="facebook" alt="facebook"><i
+              class="fa-brands fa-square-facebook"></i></a>
+          <aside class="gap2" style="border: 1px solid #0000004d; height:50px; "></aside>
+          <a target="_blank" class="text-center" href="https://www.twitch.tv/" title="twitch" alt="twitch"><i
+              class="fa fa-twitch" aria-hidden="true"></i></a>
+          <aside class="gap3" style="border: 1px solid #0000004d; height:50px; "></aside>
+          <a target="_blank" class="text-center" href="https://www.snapchat.com/" title="snapchat" alt="snapchat"><i
+              class="fa-brands fa-square-snapchat"></i></a>
+          <aside class="gap4" style="border: 1px solid #0000004d; height:50px; "></aside>
+          <a target="_blank" class="text-center" href="https://www.linkedin.com/" title="linkedin" alt="linkedin"><i
+              class="fa-brands fa-linkedin"></i></a>
+          <aside class="gap5" style="border: 1px solid #0000004d; height:50px; "></aside>
+          <a target="_blank" class="text-center" href="https://twitter.com/" title="twitter" alt="twitter"><i
+              class="fa-brands fa-square-twitter"></i></a>
+
+        </div>
+      </div>
+    </div>
+    <div class="credit d-flex justify-content-around">&copy; All rights are saved to: Naor Arza</div>
+    </div>
+  </footer>
+  <div class="popup1">
+    <div class="close-btn1">&times;</div>
+    <form class="form1" onsubmit="return false;">
+        <h2>Log in</h2>
+        <div class="form-element1">
+            <label for="email">Email</label>
+            <input type="text" id="email1" placeholder="Enter email" required="required">
+        </div>
+        <div class="form-element1">
+            <label for="password">Password</label>
+            <input type="password" id="psw" placeholder="Enter password" required
+                pattern="(?=.*\d)(?=.*[a-z]).{8,}">
+        </div>
+
+        <div class="d-flex align-items-center form-element1">
+            <input type="checkbox" id="remember-me">
+            <label id="remember" for="remember-me">Remember-me</label>
+        </div>
+        <div class="form-element1">
+            <a class="sign-in" href="question.html"><button onclick="checkpassword(),validate()">Sign
+                    in</button></a>
+        </div>
+        <div class="space1">
+            <div class="form-element1" style="width: 60%;">
+                <div class="left d-flex flex-wrap align-items-start">
+                    <p class="w-100">Dosn't have an account?</p>
+                    <br>
+                    <a id="show-signup" href="#">Sign-up</a>
+                </div>
+            </div>
+            <div class="form-element1" style="width: 40%;">
+                <a id="forgot" href="#">Forgot password?</a>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="popup2">
+    <div class="close-btn2">&times;</div>
+    <form class="form2" onsubmit="return false;">
+        <h2>Sign Up</h2>
+        <div class="form-element2">
+            <label for="email">Email</label>
+            <input type="text" id="email2" placeholder="Enter email" required="required">
+        </div>
+        <div class="form-element2">
+            <label for="password">Password</label>
+            <input type="password" id="psw2" placeholder="Enter password" required
+                pattern="(?=.*\d)(?=.*[a-z]).{8,}">
+        </div>
+        <div class="form-element2">
+            <label for="password">Re-Password</label>
+            <input type="password" id="re-psw" placeholder="Enter password again" required>
+            <div id="message">
+                <h3>Password must contain the following:</h3>
+                <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                <p id="number" class="invalid">A <b>number</b></p>
+                <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+            </div>
+        </div>
+
+
+        <div class="form-element2">
+            <a class="sign-in" href="contact.html"><button onclick="checkpassword2(),validate2()">Sign
+                    up</button></a>
+        </div>
+        <div class="space2">
+            <div class="form-element2" style="width: 60%;">
+                <div class="left d-flex flex-wrap align-items-start">
+                    <p class="w-100">Alredy have an account?</p>
+                    <br>
+                    <a id="show-login3" href="#">Sign in</a>
+                </div>
+            </div>
+            <div class="form-element2" style="width: 40%;">
+                <a id="forgot2" href="#">Forgot password?</a>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="popup4">
+    <div class="close-btn4">&times;</div>
+    <form class="form4" onsubmit="return false;">
+        <h2>Reset Password</h2>
+        <div class="form-element4">
+            <label for="email">Email</label>
+            <input type="text" id="email4" placeholder="Enter email" required="required">
+        </div>
+        <div class="form-element4">
+            <a class="sign-in" href="contact.html"><button onclick="validate3()">Confirm</button></a>
+        </div>
+        <div class="space4">
+            <div class="form-element4" style="width: 60%;">
+                <div class="left d-flex flex-wrap align-items-start">
+                    <p class="w-100">Dont have an account?</p>
+                    <br>
+                    <a id="show-signup2" href="#">Sign up</a>
+                </div>
+            </div>
+            <div class="form-element4" style="width: 40%;">
+                <a id="show-login4" href="#">Remember your password?</a>
+            </div>
+        </div>
+    </form>
+    <div class="thanku">
+    <h3>We sent you an email to reset your password</h3>
+    <br>
+    <a href="#" id="show-login5">Log-in</a>
+</div>
+</div>
+
+<script defer src="login_signup/login-signup.js"></script>
+  <script defer src="https://kit.fontawesome.com/7d9ea10ce6.js" crossorigin="anonymous"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script defer src="js/dark-mode.js"></script>
+  <script defer src="question.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

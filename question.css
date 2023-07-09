@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    transition: 500ms;
+    background: var(--faqBack-color);
+}
+
+main {
+    margin-bottom: 100px;
+    min-height: 300px;
+}
+
+.strip {
+    background: linear-gradient(45deg, #212121, #2121219a, rgba(255, 0, 0, 0.714), rgba(255, 255, 255, 0.692), #272727);
+    box-shadow: -1px 15px 15px -5px #000000;
+}
+
+.strip .faq {
+    margin-top: 120px;
+    width: 25%;
+    min-height: 300px;
+    background-image: url(questionImage/25229.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.strip .img1 {
+    width: 30%;
+    /* background-image: ; */
+}
+
+.strip .img2 {
+    width: 30%;
+}
+
+.strip .faqHead {
+    height: 50px;
+}
+
+main .faqHead h3 {
+    color: var(--secondary-color);
+    margin-top: 12px;
+    font-size: 2em;
+}
+
+main .faqHead i {
+    font-size: 1em;
+    padding-left: 20px;
+    color: var(--secondary-color);
+}
+
+.strip .images {
+    width: 100%;
+    min-height: 400px;
+}
+
+footer {
+    /* margin-top: 100px; */
+    background: rgba(243,254,255, 78%);
+}
+
+/* פקודה להעלים את הבורדר של האקורדיון */
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+/* הבפנים של האקורדיון איפה שהטקסט נמצא */
+.accordion-body {
+    background: #272727;
+    padding: 0;
+    padding: 12px;
+    color: #fff;
+    text-align: start;
+}
+
+.accordion-body .acc_link {
+    color: rgb(163, 134, 134);
+    text-decoration: none;
+    border-bottom: 0.2rem solid #ffe47a;
+    transition: .1s ease-in-out;
+}
+
+.accordion-body .acc_link:hover {
+    color: orange;
+    border-bottom: 0.2rem solid orange;
+}
+
+.accordion-item:last-of-type .accordion-collapse {
+    background: transparent;
+}
+
+.accordion-flush .accordion-item:last-child {
+    background: transparent;
+}
+
+/* הצבע של הכפתור סגור כשאתה עולה עליו */
+.accordion-header .accordion-button:hover {
+    background: rgba(62, 62, 62, 0.796);
+    color: white;
+}
+
+.accordion-header .accordion-button {
+    width: 100%;
+    background: rgb(106, 106, 106);
+    color: #fff;
+    transition: 400ms;
+}
+
+/* שינוי החץ באקורדיון*/
+.accordion-button:not(.collapsed)::after {
+    filter: brightness(0%) invert(0%);
+}
+
+.accordion-header .collapsed:active {
+    background: black;
+    color: #fff;
+}
+
+.accordion-header .collapsed:hover {
+    background: rgba(128, 128, 128, 0.616);
+    padding: 20px 30px 20px 30px;
+}
+
+.accordion-header .collapsed {
+    background: rgba(128, 128, 128, 0.329);
+    color: var(--secondary-color);
+    transition: 400ms;
+}
+
+.accordion-item {
+    background: var(--primary-color);
+}
+
+@media (max-width:768px) {
+
+    .images .faq {
+        width: 67%;
+    }
+
+}
+
+@media (max-width:655px) {
+    
+    .strip .faq {
+        width: 50%;
+    }
+}

@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="js/scrollbar.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="js/burger.css.map">
+    <link rel="stylesheet" href="js/burger.css">
+    <link rel="stylesheet" href="login_signup/login_signup.css">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="lightbox/lightbox.css">
+    <link rel="stylesheet" href="popup-video/popup-video.css">
+    <title>GamePlay - Gallery</title>
+    <link href="/YOUR_PATH/favicon.ico" rel="icon" type="image/x-icon" />
+<link
+        href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAA7az7AK+ygQDxbXoA/4mOAL1DTQCQMDoA8ZCUAPnL/wD9jZQAGxBgAFLL/wD/i5IA6oGOAP/03wDsiP8A99X9AP+9xAD7io0AW8v/AORl/wD7iZAA/YmQALNfZABhzv8A8Jf/APz/uQD/3QcAUgVmAFYGYwD7xP0A7Y/+APnV/wD0qf8A/4ePAFoXVQBSzP8A7pj+AK6xgAD/i5UA9LX/APqHkABSCmoA/IeQAOZj/wBIBWAAXs//AO6o+wD0vv8AVmzLAPHEzQCPMTwA9r7/APiHkQBNBmYA/IqRAEoMZgDQR08AUg1KAPyIjwDoZP4ATgdkAOhn/gDhcfsA/OL/APBsfADwn/4A/4iQAOZn/wDfefYATwZoAM5HUQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJgICAgICAiYAAAAAAAAXKSspNSkrDRoaHQAAAAAADkUtOC4YRjoaG0cAAAAAAAAAEzEKJAs/PTIDAAAAAAAANypDB0NDQxIAAAAAAAAAAEMPHyVEREQWMwAAAAAAAAAEFBlCAUREOyMGNgAAAAAABBk8ISgeRCJBBj0AAAAAAARELz4wCBAVQQUcAAAAAAAEREQ0LCBAQ0E5AAAAAAAAEUMMQwlDQydBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//AAD//wAA8A8AAMAHAADABwAA8AcAAOAfAADgDwAA4AMAAOADAADgAwAA4AcAAOAPAAD//wAA//8AAP//AAA="
+        rel="icon" type="image/x-icon" />
+</head>
+
+<body>
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+    <header class="d-flex align-items-center">
+        <div data-aos="fade-up-left" class="logo"><a href="index.html"><img src="logoLicense/93868.png" alt="logo"
+                    title="Site logo" height="80px"></a></div>
+
+
+        <div class="pcBar justify-content-end">
+            <nav>
+                <ul>
+                    <li class="login-Li align-items-center justify-content-center">
+                        <button style="width: 45px; background: transparent; border:none;"
+                            class=" align-items-center justify-content-center" id="show-login1">
+                            <a class="align-items-center d-flex justify-content-center"
+                                style=" border-radius: 12px; width: 50%; height: 45px;" href="#" title="log in">
+                                <i class="fa fa-user" aria-hidden="true">
+                                </i>
+                            </a>
+                        </button>
+                    <li><a href="index.html" title="Home">Home</a></li>
+                    <li><a href="about.html" title="About">About</a></li>
+                    <li><a href="trivia.html" title="Contact">Trivia</a></li>
+                    <li><a href="gallery.html" title="Gallery">Gallery</a></li>
+                    <li><a href="contact.html" title="Contact">Contact</a></li>
+                    <li class="d-flex align-items-center justify-content-center"><a href="question.html"
+                            title="F.A.Q">F.A.Q</a></li>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="phoneBar">
+            <input class="d-none" id="burger" type="checkbox" />
+
+            <label for="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html" title="Home">Home</a></li>
+                    <li><a href="about.html" title="About">About</a></li>
+                    <li><a href="trivia.html" title="Contact">Trivia</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="question.html" title="F.A.Q">F.A.Q</a></li>
+                </ul>
+            </nav>
+            <div class="login-Li2 align-items-center justify-content-center" style="
+            font-size: 1.5em;
+            right: 70px;
+            z-index: 9999;
+            position: absolute;
+            top: 10px;">
+                <button style="width: 45px; background: transparent; border:none;"
+                    class=" align-items-center justify-content-center" id="show-login2">
+                    <a class="align-items-end d-flex justify-content-center"
+                        style=" border-radius: 12px; width: 50%; height: 38px;" href="#" title="log in">
+                        <i class="fa fa-user" aria-hidden="true">
+                        </i>
+                    </a>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="gone position-relative">
+    <div class="sidebar text-start">
+        <hr>
+        <a href="#pcSection" title="Pc Section">Pc</a>
+        <br>
+        <a href="#laptopSection" title="Laptop Section">Laptop</a>
+        <br>
+        <i class="fa fa-arrow-right" aria-hidden="true" title="sidebar Arrow"></i>
+        <a href="#mouseSection" title="Mouse Section">Mouse</a>
+        <br>
+        <a href="#headphonesSection" title="Headphone Section">Headphone</a>
+        <br>
+        <a href="#Youtube" title="Videos Section">Videos</a>
+    </div>
+</div>
+    <main class="container-fluid text-center">
+        <h1 style=" font-family: monospace;" data-aos="fade-down" data-aos-duration="1000" class="display-1 text-white">Gallery</h1>
+        <div class="text-center w-100 d-flex justify-content-center">
+            <hr id="pcSection" style="color: white; width: 90%;">
+        </div>
+        <br>
+        <h3 class="display-3 text-danger" data-aos="fade-up">Gaming Pc's</h3>
+        <div class="box_all flex-wrap d-flex justify-content-center  align-items-center gap-5">
+            <div data-aos="zoom-in-right" data-aos-duration="600" class="box col-lg-2 col-md-3 col-sm-5 ">
+                <a data-lightbox="Gaming Pc's" data-title="Gaming Pc" alt="Gaming Pc" href="gaming_Pc/gamingPc.jpg">
+                    <img data-img alt="Gaming Pc" title="Gaming Pc" src="gaming_Pc/gamingPc.jpg">
+                    <div class="text">
+                        <!-- <h3>headphones</h3>
+                        <p>HyperX</p> -->
+                    </div>
+                </a>
+            </div>
+            
+            <div data-aos="zoom-in-left" data-aos-duration="600" class="box col-lg-2 col-md-3 col-sm-5 ">
+                <a data-lightbox="Gaming Pc's" data-title="Gaming Pc" alt="Gaming Pc" href="gaming_Pc/gamingPc2.jpg">
+                    <img data-img alt="Gaming Pc" title="Gaming Pc" src="gaming_Pc/gamingPc2.jpg">
+                    <div class="text">
+                        <!-- <h3>headphones</h3>
+                        <p>Razer</p> -->
+                    </div>
+                </a>
+            </div>
+            <div data-aos="zoom-in-right" data-aos-duration="600" class="box col-lg-2 col-md-3 col-sm-5 ">
+                <a data-lightbox="Gaming Pc's" data-title="Gaming Pc" alt="Gaming Pc" href="gaming_Pc/gamingPc3.jpg">
+                    <img data-img alt="Gaming Pc" title="Gaming Pc" src="gaming_Pc/gamingPc3.jpg">
+                    <div class="text">
+                        <!-- <h3>headphones</h3>
+                        <p>SteelSeries</p> -->
+                    </div>
+                </a>
+            </div>
+            <div data-aos="zoom-in-left" data-aos-duration="600" class="box col-lg-2 col-md-3 col-sm-5 ">
+                <a data-lightbox="Gaming Pc's" data-title="Gaming Pc" alt="Gaming Pc" href="gaming_Pc/gamingPc4.jpg">
+                    <img data-img alt="Gaming Pc" title="Gaming Pc" src="gaming_Pc/gamingPc4.jpg">
+                    <div class="text">
+                        <!-- <h3>headphones</h3>
+                        <p>Corsair</p> -->
+                    </div>
+                </a>
+            </div>
+        </div>
+        <hr id="laptopSection" class="w-100" style="border:1px solid black; margin-top: 80px; margin-bottom: 40px;">
+        <h3 class="display-3 text-danger" data-aos="fade-up">Gaming Laptop's</h3>
+        <div class="box_all gap-5 d-flex justify-content-center  align-items-center flex-wrap">
+            <div data-aos="zoom-in-right" data-aos-duration="600" class="box col-lg-2 col-md-3 col-sm-5 ">
+                <a data-lightbox="Gaming Laptop's" data-title="Gaming Laptop" alt="Gaming Laptop"
+                    href="gaming_Laptop/gamingLaptop.jpg">
+                    <img data-img alt="Gaming Laptop's" title="Gaming Laptop" src="gaming_Laptop/gamingLaptop.jpg">
+                    <div class="text">
+                        <!-- <h3>headphones</h3>
+                        <p>HyperX</p> -->
+                    </div>
+                </a>
+            </div>
+            <div data-aos="zoom-in-left" data-aos-duration="600" class="box col-lg-2 col-md-3 col-sm-5 ">
+                <a data-lightbox="Gaming Laptop's" data-title="Gaming Laptop" alt="Gaming Laptop"
+                    href="gaming_Laptop/gamingLaptop2.jpg">
+                    <img data-img alt="Gaming Laptop's" title="Gaming Laptop" src="gaming_Laptop/gamingLaptop2.jpg">
+                    <div class="text">
+                        <!-- <h3>headphones</h3>
+                        <p>Razer</p> -->
+                    </div>
+                </a>
+            </div>
+            <div data-aos="zoom-in-right" data-aos-duration="600" class="box col-lg-2 col-md-3 col-sm-5 ">
+                <a data-lightbox="Gaming Laptop's" data-title="Gaming Laptop" alt="Gaming Laptop"
+                    href="gaming_Laptop/gamingLaptop3.jpg">
+                    <img data-img alt="Gaming Laptop's" title="Gaming Laptop" src="gaming_Laptop/gamingLaptop3.jpg">
+                    <div class="text">
+                        <!-- <h3>headphones</h3>
+                        <p>SteelSeries</p> -->
+                    </div>
+                </a>
+            </div>
+            <div data-aos="zoom-in-left" data-aos-duration="600" class="box col-lg-2 col-md-3 col-sm-5 ">
+                <a data-lightbox="Gaming Laptop's" data-title="Gaming Laptop" alt="Gaming Laptop"
+                    href="gaming_Laptop/gamingLaptop4.jpg">
+                    <img data-img alt="Gaming Laptop's" title="Gaming Laptop" src="gaming_Laptop/gamingLaptop4.jpg">
+                    <div class="text">
+                        <!-- <h3>headphones</h3>
+                        <p>Corsair</p> -->
+                    </div>
+                </a>
+            </div>
+        </div>
+        <hr id="mouseSection" class="w-100" style="border:1px solid black; margin-top: 80px; margin-bottom: 40px;">
+        <h3 class="display-3 text-danger" data-aos="fade-up">Gaming Mouse's</h3>
+        <div class="box_all gap-5 d-flex justify-content-center  align-items-center flex-wrap">
+            <div data-aos="zoom-in-right" data-aos-duration="600" class="box col-lg-2 col-md-3 col-sm-5 ">
+                <a data-lightbox="Gaming Mouse's" data-title="Gaming Mouse" alt="Gaming Mouse"
+                    href="gaming_Mouse/gamingMouse.jpg">
+                    <img data-img alt="Gaming Mouse" title="Gaming Mouse" src="gaming_Mouse/gamingMouse.jpg">
+                    <div class="text">
+                        <!-- <h3>headphones</h3>
+                        <p>HyperX</p> -->
+                    </div>
+                </a>
+            </div>
+            <div data-aos="zoom-in-left" data-aos-duration="600" class="box col-lg-2 col-md-3 col-sm-5 ">
+                <a data-lightbox="Gaming Mouse's" data-title="Gaming Mouse" alt="Gaming Mouse"
+                    href="gaming_Mouse/gamingMouse2.jpg">
+                    <img data-img alt="Gaming Mouse" title="Gaming Mouse" src="gaming_Mouse/gamingMouse2.jpg">
+                    <div class="text">
+                        <!-- <h3>headphones</h3>
+                        <p>Razer</p> -->
+                    </div>
+                </a>
+            </div>
+            <div data-aos="zoom-in-right" data-aos-duration="600" class="box col-lg-2 col-md-3 col-sm-5 ">
+                <a data-lightbox="Gaming Mouse's" data-title="Gaming Mouse" alt="Gaming Mouse"
+                    href="gaming_Mouse/gamingMouse3.jpg">
+                    <img data-img alt="Gaming Mouse" title="Gaming Mouse" src="gaming_Mouse/gamingMouse3.jpg">
+                    <div class="text">
+                        <!-- <h3>headphones</h3>
+                        <p>SteelSeries</p> -->
+                    </div>
+                </a>
+            </div>
+            <div data-aos="zoom-in-left" data-aos-duration="600" class="box col-lg-2 col-md-3 col-sm-5 ">
+                <a data-lightbox="Gaming Mouse's" data-title="Gaming Mouse" alt="Gaming Mouse"
+                    href="gaming_Mouse/gamingMouse4.jpg">
+                    <img data-img alt="Gaming Mouse" title="Gaming Mouse" src="gaming_Mouse/gamingMouse4.jpg">
+                    <div class="text">
+                        <!-- <h3>headphones</h3>
+                        <p>Corsair</p> -->
+                    </div>
+                </a>
+            </div>
+        </div>
+        <hr id="headphonesSection" class="w-100" style="border:1px solid black; margin-top: 80px; margin-bottom: 40px;">
+        <h3 class="display-3 text-danger" data-aos="fade-up">Gaming Headphone's</h3>
+        <div class="box_all gap-5 d-flex justify-content-center  align-items-center flex-wrap">
+            <div data-aos="zoom-in-right" data-aos-duration="600" class="box col-lg-2 col-md-3 col-sm-5 ">
+                <a data-lightbox="Gaming Headphone's" data-title="Gaming Headphone" alt="Gaming Headphone"
+                    href="images/show1.jpg">
+                    <img data-img alt="Gaming Headphone" title="Gaming Headphone" src="images/show1.jpg">
+                    <div class="text">
+                        <!-- <h3>headphones</h3>
+                        <p>HyperX</p> -->
+                    </div>
+                </a>
+            </div>
+            <div data-aos="zoom-in-left" data-aos-duration="600" class="box col-lg-2 col-md-3 col-sm-5 ">
+                <a data-lightbox="Gaming Headphone's" data-title="Gaming Headphone" alt="Gaming Headphone"
+                    href="images/show2.jpg">
+                    <img data-img alt="Gaming Headphone" title="Gaming Headphone" src="images/show2.jpg">
+                    <div class="text">
+                        <!-- <h3>headphones</h3>
+                        <p>Razer</p> -->
+                    </div>
+                </a>
+            </div>
+            <div data-aos="zoom-in-right" data-aos-duration="600" class="box col-lg-2 col-md-3 col-sm-5 ">
+                <a data-lightbox="Gaming Headphone's" data-title="Gaming Headphone" alt="Gaming Headphone"
+                    href="images/show.jpg">
+                    <img data-img alt="Gaming Headphone" title="Gaming Headphone" src="images/show.jpg">
+                    <div class="text">
+                        <!-- <h3>headphones</h3>
+                        <p>SteelSeries</p> -->
+                    </div>
+                </a>
+            </div>
+            <div data-aos="zoom-in-left" data-aos-duration="600" class="box col-lg-2 col-md-3 col-sm-5 ">
+                <a data-lightbox="Gaming Headphone's" data-title="Gaming Headphone" alt="Gaming Headphone"
+                    href="images/show3.jpg">
+                    <img data-img alt="Gaming Headphone" title="Gaming Headphone" src="images/show3.jpg">
+                    <div class="text">
+                        <!-- <h3>headphones</h3>
+                        <p>Corsair</p> -->
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="gone">
+        <hr class="w-100" style="border:1px solid black; margin-top: 80px; margin-bottom: 40px;">
+        <h3 id="headphonesSection" class="display-3 text-danger" data-aos="fade-up">Video's</h3>
+        <div class="box_all gap-5 d-flex justify-content-center  align-items-center flex-wrap">
+            <div  data-aos="flip-up" data-aos-duration="1200" class="box_Video col-lg-2 col-md-3 col-sm-5 ">
+                <video src="galleryVideos/Alpha - 98026.mp4" onmouseover="this.play()"
+                    onmouseout="this.pause();this.currentTime=0;" muted></video>
+                <div class="text">
+                    <!-- <h3>headphones</h3>
+                        <p>HyperX</p> -->
+                </div>
+                </a>
+            </div>
+            <div  data-aos="flip-up" data-aos-duration="1200" class="box_Video col-lg-2 col-md-3 col-sm-5 ">
+                <video src="galleryVideos/Fan - 8064.mp4" onmouseover="this.play()"
+                    onmouseout="this.pause();this.currentTime=0;" muted></video>
+                <div class="text">
+                    <!-- <h3>headphones</h3>
+                            <p>Razer</p> -->
+                </div>
+                </a>
+            </div>
+            <div  data-aos="flip-up" data-aos-duration="1200" class="box_Video col-lg-2 col-md-3 col-sm-5 ">
+                <video src="galleryVideos/Gaming - 37585.mp4" onmouseover="this.play()"
+                    onmouseout="this.pause();this.currentTime=0;" muted></video>
+                <div class="text">
+                    <!-- <h3>headphones</h3>
+                            <p>SteelSeries</p> -->
+                </div>
+                </a>
+            </div>
+            <div  data-aos="flip-up" data-aos-duration="1200" class="box_Video col-lg-2 col-md-3 col-sm-5 ">
+                <video src="galleryVideos/Video Card - 15793.mp4" onmouseover="this.play()"
+                    onmouseout="this.pause();this.currentTime=0;" muted></video>
+                <div class="text">
+                    <!-- <h3>headphones</h3>
+                            <p>Corsair</p> -->
+                </div>
+                </a>
+            </div>
+            <div class="popup-video">
+                <span>&times;</span>
+                <video src="galleryVideos/Alpha - 98026.mp4" onclick="pause()" muted loop autoplay controls></video>
+            </div>
+        </div>
+    </div>
+        <hr id="Youtube" class="w-100" style="border:1px solid black; margin-top: 80px; margin-bottom: 40px;">
+        <h3 class="display-3 text-danger" data-aos="fade-up">YouTube Videos</h3>
+        <div class="box_all gap-5 d-flex justify-content-center  align-items-center flex-wrap">
+            <div data-aos="flip-right" data-aos-duration="1400" class="box_Youtube col-lg-5 col-md-6 col-sm-5 ">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/eyXeahoBabc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="text">
+                    <!-- <h3>headphones</h3>
+                        <p>Corsair</p> -->
+                </div>
+            </div>
+            <div data-aos="flip-left" data-aos-duration="1400" class="box_Youtube col-lg-5 col-md-6 col-sm-5 ">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/RExxVCCzkc4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="text">
+                    <!-- <h3>headphones</h3>
+                        <p>Corsair</p> -->
+                </div>
+                </a>
+            </div>
+            <div data-aos="flip-right" data-aos-duration="1400" class="box_Youtube col-lg-5 col-md-6 col-sm-5 ">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/f_qt7mhy704"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <!-- <h3>headphones</h3>
+                        <p>Corsair</p> -->
+            </div>
+            <div data-aos="flip-left" data-aos-duration="1400" class="box_Youtube col-lg-5 col-md-6 col-sm-5 ">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/b17sIyURWw0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <!-- <h3>headphones</h3>
+                            <p>Corsair</p> -->
+            </div>
+        </div>
+    </main>
+    
+    <a href="#top" class="backtotop"><i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+    <footer>
+        <div class="container-fluid d-flex flex-wrap row">
+            <div class="down d-flex flex-wrap flex-sm-wrap justify-content-evenly  align-items-center"
+                style="height: 80%; width:100%;">
+                <div
+                    class="col-7 col-xl-6 col-md-7 col-sm-8 links d-flex justify-content-md-center justify-content-sm-start">
+                    <nav class="d-flex justify-content-center">
+                        <ul class="d-flex">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="question.html">FAQ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div
+                    class="icon col-7 col-xl-6 col-md-7 col-sm-8 d-flex align-items-center justify-content-center text-center">
+                    <aside class="mike"></aside>
+                    <a target="_blank" class="text-center" href="https://www.instagram.com/" title="instagram"
+                        alt="instagram"><i class="fa-brands fa-square-instagram"></i></a>
+                    <aside class="gap1" style="border: 1px solid #0000004d; height:50px; "></aside>
+                    <a target="_blank" class="text-center" href="https://www.facebook.com/" title="facebook"
+                        alt="facebook"><i class="fa-brands fa-square-facebook"></i></a>
+                    <aside class="gap2" style="border: 1px solid #0000004d; height:50px; "></aside>
+                    <a target="_blank" class="text-center" href="https://www.twitch.tv/" title="twitch" alt="twitch"><i
+                            class="fa fa-twitch" aria-hidden="true"></i></a>
+                    <aside class="gap3" style="border: 1px solid #0000004d; height:50px; "></aside>
+                    <a target="_blank" class="text-center" href="https://www.snapchat.com/" title="snapchat"
+                        alt="snapchat"><i class="fa-brands fa-square-snapchat"></i></a>
+                    <aside class="gap4" style="border: 1px solid #0000004d; height:50px; "></aside>
+                    <a target="_blank" class="text-center" href="https://www.linkedin.com/" title="linkedin"
+                        alt="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                    <aside class="gap5" style="border: 1px solid #0000004d; height:50px; "></aside>
+                    <a target="_blank" class="text-center" href="https://twitter.com/" title="twitter" alt="twitter"><i
+                            class="fa-brands fa-square-twitter"></i></a>
+
+                </div>
+            </div>
+        </div>
+        <div class="credit d-flex justify-content-around">&copy; All rights are saved to: Naor Arza</div>
+        </div>
+    </footer>
+
+    <div class="popup1">
+        <div class="close-btn1">&times;</div>
+        <form class="form1" onsubmit="return false;">
+            <h2>Log in</h2>
+            <div class="form-element1">
+                <label for="email">Email</label>
+                <input type="text" id="email1" placeholder="Enter email" required="required">
+            </div>
+            <div class="form-element1">
+                <label for="password">Password</label>
+                <input type="password" id="psw" placeholder="Enter password" required
+                    pattern="(?=.*\d)(?=.*[a-z]).{8,}">
+            </div>
+    
+            <div class="d-flex align-items-center form-element1">
+                <input type="checkbox" id="remember-me">
+                <label id="remember" for="remember-me">Remember-me</label>
+            </div>
+            <div class="form-element1">
+                <a class="sign-in" href="question.html"><button onclick="checkpassword(),validate()">Sign
+                        in</button></a>
+            </div>
+            <div class="space1">
+                <div class="form-element1" style="width: 60%;">
+                    <div class="left d-flex flex-wrap align-items-start">
+                        <p class="w-100">Dosn't have an account?</p>
+                        <br>
+                        <a id="show-signup" href="#">Sign-up</a>
+                    </div>
+                </div>
+                <div class="form-element1" style="width: 40%;">
+                    <a id="forgot" href="#">Forgot password?</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="popup2">
+        <div class="close-btn2">&times;</div>
+        <form class="form2" onsubmit="return false;">
+            <h2>Sign Up</h2>
+            <div class="form-element2">
+                <label for="email">Email</label>
+                <input type="text" id="email2" placeholder="Enter email" required="required">
+            </div>
+            <div class="form-element2">
+                <label for="password">Password</label>
+                <input type="password" id="psw2" placeholder="Enter password" required
+                    pattern="(?=.*\d)(?=.*[a-z]).{8,}">
+            </div>
+            <div class="form-element2">
+                <label for="password">Re-Password</label>
+                <input type="password" id="re-psw" placeholder="Enter password again" required>
+                <div id="message">
+                    <h3>Password must contain the following:</h3>
+                    <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                    <p id="number" class="invalid">A <b>number</b></p>
+                    <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+                </div>
+            </div>
+    
+    
+            <div class="form-element2">
+                <a class="sign-in" href="contact.html"><button onclick="checkpassword2(),validate2()">Sign
+                        up</button></a>
+            </div>
+            <div class="space2">
+                <div class="form-element2" style="width: 60%;">
+                    <div class="left d-flex flex-wrap align-items-start">
+                        <p class="w-100">Alredy have an account?</p>
+                        <br>
+                        <a id="show-login3" href="#">Sign in</a>
+                    </div>
+                </div>
+                <div class="form-element2" style="width: 40%;">
+                    <a id="forgot2" href="#">Forgot password?</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="popup4">
+        <div class="close-btn4">&times;</div>
+        <form class="form4" onsubmit="return false;">
+            <h2>Reset Password</h2>
+            <div class="form-element4">
+                <label for="email">Email</label>
+                <input type="text" id="email4" placeholder="Enter email" required="required">
+            </div>
+            <div class="form-element4">
+                <a class="sign-in" href="contact.html"><button onclick="validate3()">Confirm</button></a>
+            </div>
+            <div class="space4">
+                <div class="form-element4" style="width: 60%;">
+                    <div class="left d-flex flex-wrap align-items-start">
+                        <p class="w-100">Dont have an account?</p>
+                        <br>
+                        <a id="show-signup2" href="#">Sign up</a>
+                    </div>
+                </div>
+                <div class="form-element4" style="width: 40%;">
+                    <a id="show-login4" href="#">Remember your password?</a>
+                </div>
+            </div>
+        </form>
+        <div class="thanku">
+        <h3>We sent you an email to reset your password</h3>
+        <br>
+        <a href="#" id="show-login5">Log-in</a>
+    </div>
+    </div>
+    
+    <script defer src="login_signup/login-signup.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+    <!-- <script defer src="backtotop.js"></script> -->
+    <script>
+        AOS.init();
+    </script>
+    <script defer src="js/lightbox-plus-jquery.js"></script>
+    <script defer src="https://kit.fontawesome.com/7d9ea10ce6.js" crossorigin="anonymous"></script>
+    <script defer src="js/scrollbar.js"></script>
+    <script defer src="js/dark-mode.js"></script>
+    <script defer src="popup-video/popup-video.js"></script>
+</body>
+
+</html>

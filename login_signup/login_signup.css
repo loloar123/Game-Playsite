@@ -1,0 +1,524 @@
+.center1 {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+.login-Li {
+    display: flex;
+}
+.login-Li2 button a i{
+    color: var(--burgerColor);
+    transition: ease-out 0.3s;
+}
+.login-Li2 button a i:hover{
+    color: skyblue;
+    /* border: 1px solid black; */
+}
+
+#show-login {
+    display: flex;
+}
+
+.center1 button {
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    background: #f5f5f5;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.popup1 {
+    position: fixed;
+    top: -150%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.25);
+    width: 380px;
+    padding: 20px 30px;
+    background: #212121;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    transition: top 0ms ease-in-out 200ms,
+        opacity 200ms ease-in-out 0ms,
+        transform 20ms ease-in-out 0ms;
+}
+
+.popup1.active1 {
+    z-index: 98;
+    top: 50vh;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition: top 0ms ease-in-out 0ms,
+        opacity 200ms ease-in-out 0ms,
+        transform 20ms ease-in-out 0ms;
+}
+
+.popup1 .close-btn1 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px ;
+    height: 15px;
+    background: #888;
+    color: #eee;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: ease-out 0.2s;
+}
+.popup1 .close-btn1:hover{
+    background: white;
+    color: black;
+}
+
+.popup1 .form1 h2 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 10px 0px 20px;
+    font-size: 25px;
+}
+
+.popup1 .form1 .form-element1 {
+    margin: 15px 0px;
+}
+
+.popup1 .form1 .form-element1 label {
+    font-size: 14px;
+    color: #fff;
+}
+
+.left p{
+    color: white;
+    margin-bottom: 5px;
+}
+
+.popup1 .form1 .form-element1 #remember {
+    position: unset;
+    width: auto;
+    height: auto;
+}
+
+.popup1 .form1 .form-element1 input[type="text"],
+.popup1 .form1 .form-element1 input[type="password"] {
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.popup1 .form1 .form-element1 input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.popup1 .form1 .form-element1 button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #00c8ff;
+    color: #000;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: ease-out 0.3s;
+}
+.popup1 .form1 .form-element1 button:hover{
+    background: #3d3d3d;
+    color: white;
+}
+
+.space1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup1 .form1 .form-element1 a {
+    display: block;
+    text-align: right;
+    font-size: 15px;
+    color: #1a79ca;
+    text-decoration: none;
+    font-weight: 600;
+    transition: ease-out 0.2s;
+}
+.popup1 .form1 .form-element1 a:hover{
+    color: black;
+}
+
+/* sign up settings */
+.center2 {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+#show-signup {
+    display: flex;
+}
+
+.center2 button {
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #222;
+    background: #f5f5f5;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.popup2 {
+    position: fixed;
+    top: -150%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.25);
+    width: 380px;
+    padding: 20px 30px;
+    background: #212121;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    transition: top 0ms ease-in-out 200ms,
+        opacity 200ms ease-in-out 0ms,
+        transform 20ms ease-in-out 0ms;
+}
+
+.popup2.active2 {
+    z-index: 98;
+    top: 50vh;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition: top 0ms ease-in-out 0ms,
+        opacity 200ms ease-in-out 0ms,
+        transform 20ms ease-in-out 0ms;
+}
+
+.popup2 .close-btn2 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px ;
+    height: 15px;
+    background: #888;
+    color: #eee;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: ease-out 0.2s;
+}
+.popup2 .close-btn2:hover{
+    background: white;
+    color: black;
+}
+.popup2 .form2 h2 {
+    text-align: center;
+    color: #fff;
+    margin: 10px 0px 10px;
+    font-size: 25px;
+}
+
+.popup2 .form2 .form-element2 {
+    margin: 5px 0px;
+}
+
+.popup2 .form2 .form-element2 label {
+    cursor: auto;
+    font-size: 14px;
+    color: #fff;
+}
+
+.popup2 .form2 .form-element2 #remember2 {
+    position: unset;
+    width: auto;
+    height: auto;
+}
+
+.popup2 .form2 .form-element2 input[type="text"],
+.popup2 .form2 .form-element2 input[type="password"] {
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.popup2 .form2 .form-element2 input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.popup2 .form2 .form-element2 button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #00c8ff;
+    color: #000;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: ease-out 0.3s;
+}
+
+.popup2 .form2 .form-element2 button:hover {
+    background: #3d3d3d;
+    color: white;
+}
+
+.space2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup2 .form2 .form-element2 a {
+    display: block;
+    text-align: right;
+    font-size: 15px;
+    color: #1a79ca;
+    text-decoration: none;
+    font-weight: 600;
+    transition: ease-out 0.2s;
+}
+
+.popup2 .form2 .form-element2 a:hover{
+    color: black;
+}
+
+/* Sign - up */
+
+/* Forgot Password */
+.center4 {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+#show-signup {
+    display: flex;
+}
+
+.center4 button {
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #222;
+    background: #f5f5f5;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.popup4 {
+    position: fixed;
+    top: -150%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.25);
+    width: 380px;
+    padding: 20px 30px;
+    background: #212121;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    transition: top 0ms ease-in-out 200ms,
+        opacity 200ms ease-in-out 0ms,
+        transform 20ms ease-in-out 0ms;
+}
+
+.popup4.active4 {
+    z-index: 98;
+    top: 50vh;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition: top 0ms ease-in-out 0ms,
+        opacity 200ms ease-in-out 0ms,
+        transform 20ms ease-in-out 0ms;
+}
+
+.popup4 .close-btn4 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px ;
+    height: 15px;
+    background: #888;
+    color: #eee;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: ease-out 0.2s;
+}
+.popup4 .close-btn4:hover{
+    background: white;
+    color: black;
+}
+.popup4 .form4 h2 {
+    text-align: center;
+    color: #fff;
+    margin: 10px 0px 10px;
+    font-size: 25px;
+}
+
+.popup4 .form4 .form-element4 {
+    margin: 20px 0px;
+}
+
+.popup4 .form4 .form-element4 label {
+    cursor: auto;
+    font-size: 14px;
+    color: #fff;
+}
+
+.popup4 .form4 .form-element4 #remember4 {
+    position: unset;
+    width: auto;
+    height: auto;
+}
+
+.popup4 .form4 .form-element4 input[type="text"],
+.popup4 .form4 .form-element4 input[type="password"] {
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.popup4 .form4 .form-element4 input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.popup4 .form4 .form-element4 button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #00c8ff;
+    color: #000;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: ease-out 0.3s;
+}
+
+.popup4 .form4 .form-element4 button:hover {
+    background: #3d3d3d;
+    color: white;
+}
+
+.space4 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup4 .form4 .form-element4 a {
+    display: block;
+    text-align: right;
+    font-size: 15px;
+    color: #1a79ca;
+    text-decoration: none;
+    font-weight: 600;
+    transition: ease-out 0.2s;
+}
+
+.popup4 .form4 .form-element4 a:hover{
+    color: black;
+}
+
+.thanku{
+    padding-top: 50px;
+    width: 300px;
+    display: none;
+    color: white;
+}
+
+.thanku h2{
+    padding-bottom: 10px;
+}
+
+.thanku a{ 
+    border-top: 1px solid white ;
+    padding-top: 15px;
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    color: #1a79ca;
+    text-decoration: none;
+    font-weight: 600;
+    transition: ease-out 0.2s;
+}
+.thanku a:hover{
+    color: #1a78cab4;
+} 
+
+/* Forgot Password */
+/* The message box is shown when the user clicks on the password field */
+#message {
+    display: none;
+    background: #212121;
+    color: #fff;
+    position: relative;
+    padding: 7px;
+}
+
+#message p {
+    /* padding: 10px 35px; */
+    margin-bottom: 0px;
+    font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -10px;
+    content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -10px;
+    content: "✖";
+}
+
+@media (max-width:776px) {
+    
+    .popup4{
+    width: 320px;
+    }
+
+}
+
+@media (max-width:576px) {
+
+    .popup1,
+    .popup2 {
+        width: 320px;
+    }
+}

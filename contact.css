@@ -1,0 +1,341 @@
+body{
+    color: var(--secondary-color);
+}
+
+.icon .boxicon{
+    border: none;
+    padding: 11px;
+}
+
+.icon .fa-envelope,.fa-phone{
+    padding: 9px;
+}
+.contact{
+    min-height: 100vh;
+    padding: 100px 100px;
+}
+
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2{
+    /* font-size: 36px; */
+    font-weight: 500;
+    color: #fff;
+}
+
+.contact .content p{
+    /* font-size: larger; */
+    font-weight: 300;
+    color: #fff;
+}
+
+.container{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.container .contactInfo{
+    width: 50%;
+    
+}
+.container .contactInfo .box{
+    padding: 30px 0;
+}
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    color: black;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container .contactInfo .box .text{
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: #00bcd4;
+}
+
+
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: #212121a2;
+    border-radius: 12px;
+}
+
+.circle{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(#33ccff,#ff0066);
+    border-radius: 50%;
+    animation: rotate 2.5s linear infinite;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.circle:after{
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    border-radius: 50%;
+    background-color: black;
+   background-image: url(images/NaLogo.jpg);
+    background-position: center;
+    background-size: cover; 
+}
+
+.circle span{
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(#33ccff,#ff0066);
+    border-radius: 50%;
+    z-index: -999;
+}
+
+.circle span:nth-child(1){
+    filter: blur(5px);
+}
+.circle span:nth-child(2){
+    filter: blur(10px);
+}
+.circle span:nth-child(3){
+    filter: blur(20px);
+}
+.circle span:nth-child(4){
+    filter: blur(55px);
+}
+
+.contactForm h2{
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+}
+
+.contactForm .inputBox{
+    width: 100%;
+    margin-top: 10px;
+    color: black;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 8px;
+    font-size: 16px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox span{
+    position: absolute;
+    left: 8px;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-25px);
+}
+
+form .Send button{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: ease 0.3s;
+}
+
+form .Send button:hover{
+    background: #00bbd4cb;
+    transform: translateY(-10px);
+}
+
+#thanks{
+    display: none;
+    padding: 100px 0px 100px 0;
+    font-size: 27px;
+}
+
+.credit{
+    color: var(--bs-body-color);
+}
+.container .contactInfo .box.phone {
+    padding-bottom: 50px;
+}
+
+.container_bubbles {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -2;
+}
+
+.bubbles {
+    position: relative;
+    display: flex;
+    bottom: 0;
+}
+
+.bubbles span {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(120s / var(--i));
+}
+
+.bubbles span:nth-child(even) {
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d75, 0 0 50px #ff2d75, 0 0 100px #ff2d7544;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(100vh) scale(0);
+    }
+
+    100% {
+        transform: translateY(-10vh) scale(1);
+    }
+
+    0% {
+        transform: translateY(100vh) scale(0);
+    }
+
+    0% {
+        transform: translateY(100vh) scale(0);
+    }
+}
+
+@media (max-width:1450px){
+    .bubbles span {
+        width: 20px;
+        height: 20px;
+    }
+}
+@media (max-width:1200px){
+    .bubbles span {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media (max-width:991px){
+.bubbles span {
+        display: none;
+    }
+}
+@media (max-width:768px){
+    .container_bubbles {
+        display: none;
+    }
+}
+
+
+@media (max-width: 991px){
+    
+    .container .contactInfo .box.phone {
+        margin-left: 24px;
+    }
+
+    .container .contactInfo .box.email {
+        margin-left: 48px;
+    }
+    
+    .contactInfo .box{
+        justify-content: center;
+    }
+
+    .contact{
+        padding: 50px;
+        padding-top: 100px;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .container .contactInfo,.contactForm{
+        width: 100%;
+    }
+}
+
+
+@media (max-width:710px){
+
+    .circle{
+        width: 240px;
+        height: 240px;
+    }
+ 
+}
+
+@media (max-width:624px){
+
+    .circle{
+        width: 230px;
+        height: 230px;
+    }
+ 
+}
+
+@media (max-width:576px){
+
+    .circle{
+        width: 200px;
+        height: 200px;
+    }
+ 
+}
+
+@media (max-width:400px){
+
+    .circle{
+        width: 160px;
+        height: 160px;
+    }
+ 
+}
